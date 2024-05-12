@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: #fff;
+}
+.mobile-container #toggle-menu{
+    display:none;
+}
+.mobile-container{
+    display: none;
+}
+nav{
+    display: flex;
+    padding: 0 2.5rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.5rem;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 1.1rem;
+   
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+main{
+    display: flex;
+    margin: 0 2.5rem;
+}
+.main-container{
+    width: 65%;
+    margin-bottom: 2rem;
+    margin-right: 1.4rem;
+}
+.main-image img{
+    width: 100%;
+    height: 100%;
+}
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height:fit-content;
+    padding-left: 2rem;
+    background-color: rgb(22, 18, 18);
+    padding-right: 2rem;
+}
+.bottom-content{
+    display: flex;
+    justify-content: space-between;
+}
+.bright-future{
+    border: 1px solid #fff;
+    width: 50%;
+}
+.bright-future h1{
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+.bright-future h1 span{
+    display: block;
+}
+.description {
+    width: 50%;
+    margin: 0 1.5rem;
+    padding-left: 2rem;
+  }
+  .description p{
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+  }
+  .description button{
+
+    background-color: orangered;
+    border: none;
+    padding: 0.8rem 4rem;
+  }
+.description button a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.new h1{
+    font-size: 2.5rem;
+    color: darkgoldenrod;
+    font-weight: 800;
+    padding-top: 1rem;
+}
+.headlines{
+    display: flex;
+    flex-direction: column;
+}
+.headlines h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 0.6rem;
+    color: #fff;
+    padding-top: 1.5rem;
+  }
+  .headlines p {
+    font-size: 1rem;
+    color: #ffffff73;
+    line-height: 1.3;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    padding-bottom: 2.9rem;
+  }
+.closing{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 2.5rem;
+}
+.card{
+    display: flex;
+
+}
+.card-img{
+    width: 25%;
+  height: 60%;
+  object-fit: cover;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .card-info{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 1rem;
+  }
+  .card-num h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: gray;
+  }
+  .card-details h2{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    
+  }
+  .card-details p{
+    color: gray;
+  }
+.logo img{
+    width: 80%;
+}
+.menu-icon,.menu-close{
+    display: none;
+}
+@media only screen and (max-width:390px){
+    *{
+        height: fit-content;
+    }
+body{
+    padding: 0;
+    margin: 0;
+   
+}
+    main{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .main-container,.side-bar,.closing{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .side-bar{
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .main-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+.closing{
+    margin-bottom: 2rem;
+}
+.menu-icon,.menu-close{
+    display: block;
+}
+.bottom-content{
+    display: block;
+    
+}
+.mobile-container #toggle-menu{
+    display: none;
+}
+
+#toggle-menu a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.mobile-container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    max-width: fit-content;
+}
+.mobile-container .icons{
+    display: block;
+}
+.description{
+    display: flex;
+    flex-direction: column;padding: 0;
+    margin: 0;
+    width: 18rem;
+}
+#menu{
+    font-size: 1rem;
+margin-bottom: 1rem;
+display: none;
+}
+
+.bright-future h1{
+    font-size: 2rem;
+    width: 18rem;
+}
+.card{
+    margin-bottom: 2rem;
+}
+.card-details h2{
+    padding-bottom: 0.5rem;
+}
+.card-img{
+    width: 50%;
+}
+.btn{
+    width: 12rem;
+    padding: 0;
+}
+.description button{
+    padding: 1rem;
+}
+}
